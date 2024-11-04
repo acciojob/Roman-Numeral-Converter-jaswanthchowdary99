@@ -6,33 +6,15 @@ function convertToRoman(num) {
       3:['L', 50], 
       4:['X', 10], 
       5:['V', 5], 
-      6:['I', 1]
+      6:['I', 1],
+	  7:['CM', 900],
+      8:['CD', 400],
+	  9:['XC', 90],	
+	  10:['XL', 40],
+	  11:['IX', 9], 
+	  12:['IV', 4]	
     };
-if(num >= 900){
-	result = result + "CM";
-	num = num - 900;
-}
-	if(num >= 400){
-	result = result + "CD";
-	num = num - 400;
-}
-	if(num >= 40){
-	result = result + "XL";
-	num = num - 40;
-}
-	if(num >= 90){
-	result = result + "XC";
-	num = num - 90;
-}
-	if(num >= 9){
-	result = result + "IX";
-	num = num - 9;
-}
-	if(num >= 4){
-	result = result + "IV";
-	num = num - 4;
-}
-	
+
   //your code here
 	let result = '';
 Object.values(obj).forEach(([symbol, value])=>{
