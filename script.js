@@ -14,7 +14,7 @@ function convertToRoman(num) {
 Object.values(obj).forEach(([symbol, value])=>{
 	let count = Math.floor(num / value);
 	result = result + symbol.repeat(count);
-	num = num - (value * count);
+	num = num - value * count;
 })
 	return result;
 }
